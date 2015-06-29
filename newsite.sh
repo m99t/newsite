@@ -61,7 +61,7 @@ echo "
 <VirtualHost $serverip:$port>
     DocumentRoot \"$virtualdir$folder\"
     ServerName $domain
-</virtualhost>
+</VirtualHost>
 " >> $confdir
 
 else
@@ -70,7 +70,7 @@ echo "
     DocumentRoot \"$virtualdir$folder\"
     ServerName $domain
     ServerAlias $alias
-</virtualhost>
+</VirtualHost>
 " >> $confdir
 fi
 
